@@ -9,7 +9,8 @@ btn.addEventListener('click',openModal);
 close.addEventListener('click',closeModal);
 modal.addEventListener('click',closeModal);
 
-//FUNCTIONS 
+//FUNCTIONS
+
 
 // open modal function
 function openModal(e){

@@ -2,8 +2,8 @@
 // VARIABLES
 const modal = document.querySelector('.modal'),
  btn =document.getElementById('btn'),
-  close = document.querySelector('.close');
-
+    close = document.querySelector('.close');
+  
 //BTN EVENT LISTENER
 btn.addEventListener('click',openModal);
 close.addEventListener('click',closeModal);

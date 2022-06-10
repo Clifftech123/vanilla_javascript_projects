@@ -1,18 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
+
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/@popperjs/core/dist/umd/popper.min.js">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Style.css">
 
     <title>JS form validation</title>
 </head>
+
 <body>
 
-    
+    <div class="container form-container">
+        <form id="form" class="form" onsubmit=" ">
+               <h1>Sign Up</h1>
+            <!--FORM NAME INPUT SECTION  -->
+            <div class="mb-2 form-field  ">   
+                <label for="username" class="form-label"> Username</label>
+                <input type="text" name="username" class="form-control" id="username" autocomplete="off">
+                <small> Error massage </small>
+            </div>
+
+
+
+            <!-- FORM EMAIL INPUT SECTION  -->
+            <div class="mb-2 form-field ">
+                <label for="email" class="form-label"> Email</label>
+                <input type="email" name="email" class="form-control" id="email" autocomplete="off">
+                <small> Error massage</small>
+            </div>
+
+
+            <!-- FORM PASSWORD INPUT SECTION -->
+            <div class="mb-2 form-field ">
+                <label for="password" class="form-label"> Password</label>
+                <input type="password" class="form-control" name="password" 
+                    id="password" autocomplete="off">
+                <small> Error massage</small>
+            </div>
+
+
+            <!-- Re-enter your password SECTION -->
+            <div class="mb-3 form-field ">
+                <label for="confirm-password" class="form-label"> Confirm password</label>
+                <input type="password" name="confirm-password" class="form-control"   id="password2"      autocomplete="off">
+                <small>Error massage</small>
+            </div>
+
+
+            <!-- SUBMIT SECTION  -->
+            <div class="mb-2  button_submit ">
+                <input type="submit" name="submit" value="Submit" autocomplete="off" class="btn btn-primary" autocomplete="off" </div> <!--
+
+
+
+
+                    social icon -->
+                <div class="container  Social-icons d-flex  justify-content-center ">
+                    <span> <a href="https:// www.facebook.com/" class="fa fa-facebook"> </a>
+                    </span>
+                    <span>
+                        <a href="http://www.twitter.com/" class="fa fa-twitter"></a>
+                    </span><span>
+                        <a href="http:// www.github" class="fa fa-github"></a>
+                    </span>
+
+
+                </div>
+        </form>
+    </div>
+
+
+
+
     <script src="App.js"></script>
 </body>
+
 </html>

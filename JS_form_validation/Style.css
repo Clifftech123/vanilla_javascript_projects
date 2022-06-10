@@ -1,0 +1,111 @@
+
+/* root that contains some colors variables  */
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans',
+    sans-serif;
+     
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+      background-color: #f9fafb;
+    
+     margin: 0;
+}
+
+/* h1 tag */
+.form h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20PX;
+
+}
+
+.form-field input:focus {
+    outline: 0px;
+      border-color: #777;
+}
+
+
+/* actions that will perform when we send the forms */
+.form-field.error input {
+    border-color: var(--error-color);
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+
+
+.form-field small {
+    color: var(--error-color);
+    visibility: hidden;
+}
+
+.form-field.error small{
+    visibility: visible;
+}
+
+
+
+/* form container */
+.form-container{
+ width: 35%;
+   box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
+   background-color: #fff;
+}
+
+.form-field label {
+    display: block;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+
+
+/* button */
+.btn{
+    width: 100%;
+}
+
+
+
+/* social icons */
+.Social-icons a {
+    text-decoration: none;
+}
+.fa-facebook{
+    margin: 10px ;
+    color: black;
+}
+
+.fa-twitter {
+    margin: 10px;
+    color: black;
+}
+.fa-github {
+    margin: 10px;
+    color: black;
+}
+
+

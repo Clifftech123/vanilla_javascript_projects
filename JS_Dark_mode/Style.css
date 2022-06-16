@@ -1,122 +1,125 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
 
 
 
 /* the cutomxer colors  */
-:root{
-    --primary-bg-color:#eee;
-    --seconday-bg-color:#fff;
-     --primary-text-color:#666;
-       --seconday-text-color:#999;
-       --starts-color:#4107ff;
+:root {
+  --primary-bg-color: #eee;
+  --seconday-bg-color: #fff;
+  --primary-text-color: #666;
+  --seconday-text-color: #999;
+  --starts-color: #4107ff;
+  --header-text-color: #b76e79;
+
 
 }
 
-body.active{
-    --primary-bg-color:#222;
-    --seconday-bg-color:#333;
-     --primary-text-color:#fff;
-       --seconday-text-color:#eee;
-       --starts-color:#4107ff;
-}
+body.active {
+  --primary-bg-color: #222;
+  --seconday-bg-color: #333;
+  --primary-text-color: #fff;
+  --seconday-text-color: #eee;
+  --starts-color: #c30b4e;
+  --header-text-color: #c30b4e;
 
-
-
-*{
-    margin: 0;
-    padding: 0;
 }
 
 
 
-body{
-font-family: 'Poppins',sans-serif;
-background-color: var(--primary-bg-color);
-min-height: 100vh;
-     display: flex;
-     justify-content: center;
- 
-     flex-direction: column;
- 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-bg-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+
 }
 
 
 /* header  text */
-.Header{
+.Header {
 
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  color: var(--header-text-color);
 }
 
 
 
 
 /* the container of the main page  */
-.container{
- padding: 80px 20px;
- display: flex;
- justify-content: space-around;
- flex-wrap: wrap;
-  }
+.container {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+ 
+}
 
 
-  /* container content */
-.container  .content {
- width: 400px;
- background-color: var(--seconday-bg-color);
- border-radius: 5PX;
- padding: 20px;
- margin: 20px;
- box-shadow: 0px  5px 10px rgba(0,0,0,0.2);
-  }
+/* container content */
+.container .content {
+  width: 400px;
+  background-color: var(--seconday-bg-color);
+  border-radius: 5PX;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid var(--container-border-color);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
 
 
-  .container  .content  p{
-    line-height: 2;
-    color: var(--primary-text-color);
-  }
+.container .content p {
+  line-height: 2;
+  color: var(--primary-text-color);
+}
 
 
-  /* user infor with the strars  */
- .content .userInfor{
+/* user infor with the strars  */
+.content .userInfor {
 
   margin-top: 20px;
   line-height: 2;
-    color: var(--primary-text-color);
-  
- }
+  color: var(--primary-text-color);
 
+}
+  .content .userInfor .icon-star{
+  color: var(--starts-color);
+}
 
- .content .userInfor span img{
+.content .userInfor span img {
   float: right;
- margin-left: 10px;
- clip-path: circle(48% at 50% 50%);
- background-color: var(--primary-bg-color);
- font-size: 50px;
+  margin-left: 10px;
+  clip-path: circle(48% at 50% 50%);
+  background-color: var(--primary-bg-color);
+  font-size: 50px;
 
- }
+}
 
 
- /* ========theme  that has the mood icon  with the of tog============== */
- #theme-toggle{
+/* ========theme  that has the mood icon  with the of tog============== */
+#theme-toggle {
 
   position: absolute;
   font-size: 2rem;
-   left: 90%;
-   top: 5%;
-   position: fixed;
-   background-color: var(--seconday-bg-color);
-   color: var(--primary-text-color);
-   cursor: pointer;
-   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-   border-radius: 5px;
-  
- 
- }
+  left: 90%;
+  top: 5%;
+  position: fixed;
+  background-color: var(--seconday-bg-color);
+  color: var(--primary-text-color);
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 
 
-
-
-
+}

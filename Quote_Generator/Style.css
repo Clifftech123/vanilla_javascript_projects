@@ -1,0 +1,47 @@
+/* google font links  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+
+/*  Root colors  */
+
+:root{
+    --primary-bg-color: #eee;
+        --seconday-bg-color: #fff;
+        --primary-text-color: #666;
+        --seconday-text-color: #999;
+        --header-text-color: #b76e79;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--primary-bg-color);
+   font-family: 'Poppins', sans-serif;
+display: flex;
+    justify-content: center;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+
+/* main container */
+.quote-container{
+    background-color: var(--seconday-bg-color);
+    padding: 2rem;
+    text-align: center;
+    
+
+
+}
+
+

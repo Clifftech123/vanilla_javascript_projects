@@ -1,47 +1,134 @@
 /* google font links  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 
 /*  Root colors  */
 
-:root{
+:root {
     --primary-bg-color: #eee;
-        --seconday-bg-color: #fff;
-        --primary-text-color: #666;
-        --seconday-text-color: #999;
-        --header-text-color: #b76e79;
+    --seconday-bg-color: #fff;
+    --primary-text-color: #666;
+    --seconday-text-color: #999;
+    --header-text-color: #b76e79;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
+    box-sizing: border-box;
 }
 
-body{
+
+body.active {
+    --primary-bg-color: #09091b;
+    --seconday-bg-color: #20273c;
+    --primary-text-color: #fff;
+    --seconday-text-color: #eee;
+    --starts-color: #c30b4e;
+    --header-text-color: #c30b4e;
+
+}
+
+body {
     min-height: 100vh;
     background-color: var(--primary-bg-color);
-   font-family: 'Poppins', sans-serif;
-display: flex;
-    justify-content: center;
+    color: var(--primary-text-color);
+    font-family: Montserrat, sans-serif;
     font-weight: 700;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    
+
+}
+
+/* Dark section  */
+.fa-moon{
+    font-size: 2rem;
+    margin-bottom: 50px;
+    cursor: pointer;
+
 }
 
 
+
 /* main container */
-.quote-container{
+.quote-container {
     background-color: var(--seconday-bg-color);
     padding: 2rem;
     text-align: center;
-    
+    width: 100%;
+    max-width: 900px;
+     margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+/* font of the text */
+.quote-text {
+    font: size 3rem;
+    margin-top: 10px;
+    color: var(--seconday-text-color);
+}
+
+.long-quote {
+    font-size: 2rem;
+}
 
 
+/* quote icon */
+.fa-quote-left {
+    cursor: pointer;
+    font-size: 3rem;
+    color: rgb(220, 220, 220);
+}
+
+
+/* author name */
+.quote-author {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: var(--seconday-text-color);
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* button container  */
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* button  */
+button:hover {
+    filter: brightness(110%);
+}
+
+button:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+/* Social icons  */
+.twitter-button:hover {
+    color: #38a1f3;
+}
+
+
+.fa-twitter {
+    font-size: 1.5rem;
+}
+
+.fa-facebook{
+    font-size: 1.5rem;
+    }
+
+.fa-git-square{
+ font-size: 1.5rem;
+ margin: 10px;
 }
 
 

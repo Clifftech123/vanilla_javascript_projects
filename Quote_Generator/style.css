@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+
+
+
+/* root colors  */
+:root {
+    --primary-bg-color: #eee;
+      --seconday-bg-color: #fff;
+      --primary-text-color: #666;
+      --seconday-text-color: #999;
+      --header-text-color: #b76e79;
+  
+  }
+
+  
+    body.active {
+    --primary-bg-color: #09091b;
+      --seconday-bg-color: #20273c;
+      --primary-text-color: #fff;
+      --seconday-text-color: #eee;
+      --starts-color: #c30b4e;
+      --header-text-color: #c30b4e;
+  
+    }
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Dark section  */
+.fa-moon {
+  font-size: 2rem;
+  cursor: pointer;
+
+}
+
+
+
+/* main container */
+.quote-container {
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  background-color: var(--seconday-bg-color);
+  color: var(--seconday-text-color);
+  border-radius: 10px;
+
+}
+
+
+/* font text */
+.quote-text {
+  font-size: 2.75rem;
+    color: var(--seconday-text-color);
+}
+
+.long-quote {
+  font-size: 2rem;
+}
+
+.fa-quote-left {
+  font-size: 4rem;
+}
+
+/* author text */
+.quote-author {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* button container */
+.button-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* button styles */
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+ 
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+
+}
+
+.fa-twitter {
+  font-size: 1.5rem;
+}
+
+/* Loader */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #333;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+  .quote-container {
+    margin: auto 10px;
+  }
+
+  .quote-text {
+    font-size: 2.5rem;
+  }
+}
